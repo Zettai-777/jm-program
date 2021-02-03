@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="jdbc.model.User" table="User">
+        <id name="id" type="java.lang.Long">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="name" length="45" not-null="true"/>
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="lastName" length="45" not-null="true"/>
+        </property>
+        <property name="age" type="java.lang.Byte">
+            <column name="age" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

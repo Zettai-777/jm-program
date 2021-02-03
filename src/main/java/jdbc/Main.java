@@ -2,6 +2,7 @@ package jdbc;
 
 import jdbc.dao.UserDaoJDBCImpl;
 import jdbc.service.UserServiceImpl;
+import jdbc.util.Util;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,5 +22,6 @@ public class Main {
         userService.cleanUsersTable();
         System.out.println("Выводим текущий список пользователей.");
         System.out.println(userService.getAllUsers());
+//        Util.shutDown();
     }
 }
